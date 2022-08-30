@@ -12,8 +12,6 @@ public class Course02
         bananaExample();
         operatorPrecedence();
         stringPool();
-
-
     }
 
     private static String pooledString = "test";
@@ -87,10 +85,10 @@ public class Course02
         banana.grow(5);
         System.out.println(banana.toString()); // Unnecessary 'toString()' call
 
-        banana.grow(1);
+        banana.grow();
         System.out.println(banana); // implicit call to .toString()
 
-        banana.grow(1);
+        banana.grow();
         System.out.println(banana);
 
         System.out.println("Amount of Banana: " + Banana.amountOfBananas);

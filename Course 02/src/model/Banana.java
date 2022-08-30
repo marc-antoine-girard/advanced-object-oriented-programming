@@ -20,6 +20,7 @@ public class Banana
     // Its type is Color. Color is an enum defined in the model package
     private Color color = Color.GREEN;
 
+    // Since a constructor is specified, the def
     public Banana(String species)
     {
         // The "this" here is to avoid confusion. It is usually optional
@@ -53,6 +54,12 @@ public class Banana
             color = Color.BROWN;
         else if (ageInDays > 5)
             color = Color.YELLOW;
+    }
+
+    // Method overload
+    public void grow()
+    {
+        grow(1);
     }
 
     @Override
