@@ -8,6 +8,12 @@ Introduction to `Scanner class`
 
 Demo with the `Banana Class`. Method override and overload, Operator precedence.
 
-***Bonus**: Color enum, Apple Class*
+***Bonus**: `Color enum`, `Apple Class`*
+
+### Resources
+
+- <https://www.sololearn.com/>
+
+-----
 
 *Gitignore generated using [gitignore.io](https://www.toptal.com/developers/gitignore/)*
