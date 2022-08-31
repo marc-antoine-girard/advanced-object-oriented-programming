@@ -2,11 +2,11 @@
 
 ## Course 01
 
-Introduction to Scanner class
+Introduction to `Scanner class`
 
 ## Course 02
 
-Demo with the Banana Class. Method override and overload, Operator precedence.
+Demo with the `Banana Class`. Method override and overload, Operator precedence.
 
 ***Bonus**: Color enum, Apple Class*
 
