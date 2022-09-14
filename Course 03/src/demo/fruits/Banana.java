@@ -1,4 +1,4 @@
-package fruits;
+package demo.fruits;
 
 public class Banana extends Fruit
 {
