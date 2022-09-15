@@ -1,5 +1,7 @@
 package pattern.observer.models;
 
+// Can be converted in one line using record
+// public record Weather(double pressure, double humidity, double temperature) { }
 public class Weather
 {
     private final double pressure;

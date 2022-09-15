@@ -41,5 +41,11 @@ public class Student implements Comparable<Student>{
     {
         return Integer.signum(age - o.getAge());
     }
+
+    @Override
+    public String toString()
+    {
+        return getFirstName() + " " + getLastName();
+    }
 }
 

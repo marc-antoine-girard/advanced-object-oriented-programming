@@ -15,7 +15,6 @@ public class WeatherSupplier implements Observable<Weather>
         observers = new ArrayList<>();
     }
 
-
     @Override
     public void subscribe(Observer<Weather> observer)
     {

@@ -37,19 +37,7 @@ public class HashMapDemo
         // Know if the HashMap contains this object as a Value
         studentsMap.containsValue(student2); // returns true or false
 
-
-        HashMap<String, ArrayList<Student>> classes = new HashMap<>();
-
-        classes.put("oop", new ArrayList<>());
-
-        if (!classes.containsKey("oop"))
-        {
-            classes.put("oop", new ArrayList<>());
-        }
-
-        classes.get("oop").add(new Student(6, "asd", "asd", 20));
-
-
+//region Iteration Examples
         // Loop over keys and values (standard, recommended)
         for (Map.Entry<Integer, Student> studentEntry : studentsMap.entrySet())
         {
@@ -81,6 +69,21 @@ public class HashMapDemo
 
         studentsMap.forEach((id, student) -> System.out.println("id: " + id + " name: " + student.getFirstName()));
         studentsMap.forEach(HashMapDemo::methodWithTwoParameters);
+//endregion
+
+//region ContainsKey Example
+        HashMap<String, ArrayList<Student>> classes = new HashMap<>();
+
+        classes.put("oop", new ArrayList<>());
+
+        // An example where containsKey is useful. This is a commun pattern in applications
+        if (!classes.containsKey("oop"))
+        {
+            classes.put("oop", new ArrayList<>());
+        }
+
+        classes.get("oop").add(new Student(6, "asd", "asd", 20));
+//endregion
     }
 
     public static void methodWithTwoParameters(Integer id, Student student){

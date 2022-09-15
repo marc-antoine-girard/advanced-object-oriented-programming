@@ -32,7 +32,7 @@ public class ArrayListDemo
 
         // access student3 in list.
         // returns the third element since collections start at index 0
-        students.get(2);
+        System.out.println(students.get(2));
 
         // removes student4
         students.remove(3); // using the index
@@ -46,12 +46,6 @@ public class ArrayListDemo
         for (int i = 0; i < students.size(); i++) {
             Student e = students.get(i);
         }
-
-        // reversed loop, good for removing elements
-        for (int i = students.size() - 1; i >= 0; i--) {
-            Student e = students.get(i);
-        }
-
 
         //option 2 : With enhanced for loop
         // cannot remove elements here
@@ -72,6 +66,12 @@ public class ArrayListDemo
             System.out.println(iterator.next());
         }
 
+        // reversed loop, good for removing elements
+        for (int i = students.size() - 1; i >= 0; i--) {
+            Student e = students.get(i);
+        }
+
+        // Advanced
         students.forEach((value) -> System.out.println(value)); // Lambda function. Return is implicit in an Expression body (arrow)
         students.forEach(value -> System.out.println(value)); // Parentheses are optional when only passing one value
         students.forEach(System.out::println); // same thing as line above. Called Method Reference, or Method Grouping
