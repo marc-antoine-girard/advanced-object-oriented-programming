@@ -1,4 +1,32 @@
+
 # Advanced object-oriented programming
+
+## Cloning the repository
+
+ Using git:
+
+```curl
+git clone https://github.com/marc-antoine-girard/advanced-object-oriented-programming.git
+```
+
+## Pull new versions
+```curl
+git pull
+```
+If it aborts / doesn't work, you might have modified some files and its expecting you to commit them first. Since you can't push on this project, your options are:
+1. Discard your changes and pull. The reset command will reset your head to the last commit from the remote branch (origin = remote)
+```curl
+git add .
+git reset --hard origin/main
+```
+
+2. Stash your changes during the pull
+
+```curl
+git add .
+git stash
+git pull
+```
 
 ## Course 01
 
