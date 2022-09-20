@@ -12,7 +12,7 @@ Demo with the `Banana Class`. Method override and overload, Operator precedence.
 
 ## Course 03
 
-Demo with the abstract class `Fruit`. 
+Demo with the abstract class `Fruit`.
 
 Exercises 1 - 12.
 
